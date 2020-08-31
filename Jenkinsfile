@@ -1,7 +1,7 @@
 pipeline {
   agent any
   environment {
-    registry = "localhost:5000/node-test-app_jenkins"
+    registry = "localhost:5000/app"
     dockerImage = ""
     Deploy = "true"
   }

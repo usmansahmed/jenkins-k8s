@@ -34,7 +34,7 @@ pipeline {
       }
       steps {
         script {
-          sh 'sudo kubectl create -f webapp.yaml'
+          sh 'sudo kubectl create -f app-deployment.yaml,app-service.yaml'
           sh 'sudo kubectl get all'
         }
       }

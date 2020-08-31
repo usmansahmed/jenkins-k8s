@@ -45,7 +45,7 @@ pipeline {
       }
       steps {
         script {
-          sh "sudo kubectl set image deployment.apps/test-deployment node-app-container=${registry}:${BUILD_NUMBER}"
+          sh "sudo kubectl set image deployment.apps/app app=${registry}:${BUILD_NUMBER}"
         }
       }
     }
